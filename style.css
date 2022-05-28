@@ -1,0 +1,161 @@
+* {
+    margin: 0%;
+    padding: 0%
+}
+
+/* header e Inicio */
+
+header {
+    background-color: #a4a484;
+
+}
+
+header img {
+    max-width: 15%;
+
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 3%;
+
+}
+
+.menu-inicio a {
+    text-decoration: none;
+    color: white;
+    text-align: start;
+    font-size: 1.7em;
+    font-family: 'Allura', cursive;
+    display: flex;
+    justify-content: center;
+
+}
+
+.fotoInicio {
+    width: 99%;
+}
+
+.texto {
+    font-family: 'Arima Madurai', cursive;
+    padding: 5%;
+}
+
+.titulos {
+    text-align: center;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    color: white;
+    font-family: "allura", cursive;
+    font-size: 3em;
+
+}
+
+/*seccion cabañas*/
+
+
+section img {
+    flex: 5%;
+    padding-left: 0.5%;
+}
+
+
+section {
+    background-color: #9e9e74a8;
+    color: aliceblue;
+
+}
+
+
+.menu-cabanas a {
+    color: aliceblue;
+    font-family: "allura", cursive;
+    font-size: 1.7em;
+
+}
+
+
+.image-muestra {
+    width: 100%;
+    display: flex
+}
+
+.grid-container {
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: repeat(3, 30%);
+    gap: 20px;
+    justify-content: center;
+}
+
+.grid-item {
+    width: 100%;
+    height: 100%;
+}
+
+/*seccion donde estamos*/
+
+.grid-ubicacion {
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: repeat(2, 50%);
+    justify-items: center;
+
+}
+
+.referencias {
+
+    padding-top: 3%;
+}
+
+.texto-referencia {
+    line-height: 50px;
+    font-family: 'Arima Madurai', cursive;
+    padding-left: 5%;
+
+}
+
+.mapa {
+    position: relative;
+    width: 100%;
+
+}
+
+.iframe {
+    position: absolute;
+    width: 95%;
+    height: 100%;
+
+}
+
+/*seccion consultas*/
+
+.grid-consulta {
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: repeat(2, 50%);
+    justify-items: center;
+}
+
+
+/* footer */
+footer ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.redes img {
+
+    max-width: 10%;
+    padding-left: 35%;
+}
+ 
+.redes {
+    padding: 50px;
+    background-color: #9e9e74a8;
+}
