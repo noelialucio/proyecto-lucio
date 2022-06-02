@@ -1,6 +1,7 @@
 * {
     margin: 0%;
-    padding: 0%
+    padding: 0%;
+    
 }
 
 /* header e Inicio */
@@ -15,7 +16,7 @@ header img {
 
 }
 
-header img:hover{
+header img:hover {
     transition: all 2s;
     max-width: 20%;
 }
@@ -53,6 +54,7 @@ nav ul {
 .texto {
     font-family: 'Arima Madurai', cursive;
     padding: 5%;
+    margin: 0%;
 }
 
 .titulos {
@@ -62,11 +64,12 @@ nav ul {
     color: white;
     font-family: "allura", cursive;
     font-size: 3em;
+    margin: 0%;
 
 }
 
 .titulos:hover {
-    color:#6d8661 ;
+    color: #6d8661;
 }
 
 /*seccion cabañas*/
@@ -75,13 +78,14 @@ nav ul {
 section img {
     flex: 5%;
     padding-left: 0.5%;
+    
 }
 
 
 section {
     background-color: #9e9e74a8;
     color: aliceblue;
-
+  
 }
 
 
@@ -89,7 +93,7 @@ section {
     color: aliceblue;
     font-family: "allura", cursive;
     font-size: 1.7em;
-    
+
 
 }
 
@@ -99,8 +103,6 @@ section {
     font-size: 2.5em;
 
 }
-
-
 
 .image-muestra {
     width: 100%;
@@ -113,7 +115,13 @@ section {
     grid-template-columns: repeat(3, 30%);
     gap: 20px;
     justify-content: center;
+  
 }
+
+.menu-cabanas {
+    margin: 0%;
+}
+
 
 .grid-item {
     width: 100%;
@@ -125,6 +133,7 @@ section {
     border-radius: 30px;
     transform: scale(1.2);
 }
+
 
 /*seccion donde estamos*/
 
@@ -171,22 +180,25 @@ section {
 }
 
 
-/* footer */
-footer ul {
+
+footer div ul {
+
     list-style-type: none;
     display: flex;
     justify-content: space-around;
     padding-top: 3%;
     padding-bottom: 3%;
+   
 }
 
 .redes img {
 
-    max-width: 10%;
+    width: 45%;
     padding-left: 35%;
 }
- 
+
 .redes {
-    padding: 50px;
     background-color: #9e9e74a8;
+    padding: 50px;
+    margin: 0%;
 }
