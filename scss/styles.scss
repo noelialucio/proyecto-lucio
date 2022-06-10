@@ -1,0 +1,195 @@
+* {
+    margin: 0%;
+    padding: 0%;
+
+    body {
+        background-color: #9e9e74a8;
+    }
+
+    header {
+        background-color: #a4a484;
+
+        img {
+            max-width: 15%;
+
+            &:hover {
+                transition: all 2s;
+                max-width: 20%;
+            }
+        }
+
+        nav {
+            ul {
+                list-style-type: none;
+                display: flex;
+                justify-content: space-around;
+                padding-bottom: 3%;
+                text-decoration: none;
+            }
+        }
+
+        a {
+            color: white;
+            text-align: start;
+            font-size: 1.7em;
+            font-family: 'Allura', cursive;
+            display: flex;
+            justify-content: center;
+
+            &:hover {
+                color: #334024;
+                transition: all 2s;
+                font-size: 2.5em;
+            }
+        }
+
+    }
+
+
+
+
+
+    section {
+        img {
+            flex: 5%;
+            padding-left: 0.5%;
+        }
+
+        .fotoInicio {
+            width: 99%;
+        }
+
+        color: aliceblue;
+
+        .texto {
+            font-family: 'Arima Madurai', cursive;
+            padding: 5%;
+            margin: 0%;
+        }
+
+        .titulos {
+            text-align: center;
+            padding-top: 3%;
+            padding-bottom: 3%;
+            color: white;
+            font-family: "allura", cursive;
+            font-size: 3em;
+            margin: 0%;
+
+            &:hover {
+                color: #6d8661;
+            }
+        }
+    }
+
+    .menu-cabanas {
+        margin: 0%;
+        display: flex;
+        justify-content: center;
+        justify-content: space-around;
+
+        a {
+            color: aliceblue;
+            font-family: "allura", cursive;
+            font-size: 1.7em;
+            text-decoration: none;
+
+
+            &:hover {
+                color: #6d8661;
+                transition: all 2s;
+                font-size: 2.5em;
+            }
+        }
+        .image-muestra {
+            width: 100%;
+            display: flex;
+        }
+    }
+
+   
+
+    .grid-container {
+        display: grid;
+        grid-template-rows: 100%;
+        grid-template-columns: repeat(3, 30%);
+        gap: 20px;
+        justify-content: center;
+
+        .grid-item {
+            width: 100%;
+            height: 100%;
+    
+            &:hover {
+                transition: all 2s;
+                border-radius: 30px;
+                transform: scale(1.2);
+            }
+        }
+    }
+
+  
+
+    .grid-ubicacion {
+        display: grid;
+        grid-template-rows: 100%;
+        grid-template-columns: repeat(2, 50%);
+        justify-items: center;
+    }
+
+    .referencias {
+        padding-top: 3%;
+        line-height: 50px;
+        font-family: 'Arima Madurai', cursive;
+        padding-left: 5%;
+    }
+
+   
+
+    .mapa {
+        position: relative;
+        width: 100%;
+    }
+
+    .iframe {
+        width: 95%;
+        height: 100%;
+    }
+
+    .container {
+        max-width: 100%;
+    }
+
+    .form-group {
+        padding-right: 15%;
+        padding-left: 15%;
+    }
+
+    .texto-uno {
+        padding-left: 15%;
+        padding-top: 10%;
+    }
+
+    footer {
+        padding: 50px;
+        margin: 0%;
+
+        div {
+            ul {
+                list-style-type: none;
+                display: flex;
+                justify-content: space-around;
+                padding-top: 3%;
+                padding-bottom: 3%;
+            }
+        }
+
+        img {
+            width: 45%;
+            padding-left: 35%;
+        }
+
+    }
+
+
+}
