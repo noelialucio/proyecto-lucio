@@ -1,0 +1,32 @@
+%estilos-titulos {
+
+    text-align: center;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    color: $font-color;
+    font-family: "allura", cursive;
+    font-size: 3em;
+    margin: 0%;
+}
+
+%estilos-textos {
+
+    font-family: 'Arima Madurai', cursive;
+    padding: 5%;
+    margin: 0%;
+}
+
+%estilos-menu {
+    color: $font-color;
+    text-align: start;
+    font-size: 1.7em;
+    font-family: 'Allura', cursive;
+    display: flex;
+    justify-content: center;
+}
+
+%hover-fotos {
+    transition: all 2s;
+    border-radius: 30px;
+    transform: scale(1.2);
+}

@@ -1,4 +1,5 @@
 @import "variables";
+@import "extends";
 
 
 
@@ -11,7 +12,7 @@
     }
 
     header {
-        background-color: #a4a484;
+        background-color: $bg-header;
 
         img {
             max-width: 15%;
@@ -33,12 +34,7 @@
         }
 
         a {
-            color: white;
-            text-align: start;
-            font-size: 1.7em;
-            font-family: 'Allura', cursive;
-            display: flex;
-            justify-content: center;
+           @extend %estilos-menu;
 
             &:hover {
                 color: #334024;
@@ -63,25 +59,18 @@
             width: 99%;
         }
 
-        color: aliceblue;
+        color: $font-color;
 
         .texto {
-            font-family: 'Arima Madurai', cursive;
-            padding: 5%;
-            margin: 0%;
+          @extend %estilos-textos;
+
         }
 
         .titulos {
-            text-align: center;
-            padding-top: 3%;
-            padding-bottom: 3%;
-            color: white;
-            font-family: "allura", cursive;
-            font-size: 3em;
-            margin: 0%;
+           @extend %estilos-titulos;
 
             &:hover {
-                color: #6d8661;
+                color: $bg-hover;
             }
         }
     }
@@ -93,15 +82,15 @@
         justify-content: space-around;
 
         a {
-            color: aliceblue;
+            color:$font-color;
             font-family: "allura", cursive;
             font-size: 1.7em;
             text-decoration: none;
 
 
             &:hover {
-                color: #6d8661;
-                transition: all 2s;
+                color: $bg-hover;
+                transition: all 2s;                
                 font-size: 2.5em;
             }
         }
@@ -125,9 +114,7 @@
             height: 100%;
     
             &:hover {
-                transition: all 2s;
-                border-radius: 30px;
-                transform: scale(1.2);
+               @extend %hover-fotos;
             }
         }
     }
