@@ -11,7 +11,7 @@
 
 %estilos-textos {
 
-    font-family: 'Arima Madurai', cursive;
+    font-family: $font-style-text;
     padding: 5%;
     margin: 0%;
 }
@@ -20,7 +20,7 @@
     color: $font-color;
     text-align: start;
     font-size: 1.7em;
-    font-family: 'Allura', cursive;
+    font-family: $font-style-title;
     display: flex;
     justify-content: center;
 }

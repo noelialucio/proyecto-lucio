@@ -8,15 +8,15 @@
   margin: 0%; }
 
 * section .texto {
-  font-family: 'Arima Madurai', cursive;
+  font-family: "Arima Madurai", cursive;
   padding: 5%;
   margin: 0%; }
 
-* header a {
+header a {
   color: aliceblue;
   text-align: start;
   font-size: 1.7em;
-  font-family: 'Allura', cursive;
+  font-family: "allura", cursive;
   display: flex;
   justify-content: center; }
 
@@ -25,42 +25,90 @@
   border-radius: 30px;
   transform: scale(1.2); }
 
+footer {
+  padding: 50px;
+  margin: 0%; }
+  footer div ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 3%;
+    padding-bottom: 3%; }
+  footer img {
+    width: 45%;
+    padding-left: 35%; }
+
+header {
+  background-color: #a4a484; }
+  header img {
+    max-width: 15%; }
+  header nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 3%;
+    text-decoration: none; }
+  header a:hover {
+    color: #334024;
+    transform: scale(1.2);
+    transition: all 2s; }
+
 * {
   margin: 0%;
   padding: 0%; }
   * body {
     background-color: #9e9e74a8; }
-  * header {
-    background-color: #a4a484; }
-    * header img {
-      max-width: 15%; }
-      * header img:hover {
-        transition: all 2s;
-        max-width: 20%; }
-    * header nav ul {
-      list-style-type: none;
-      display: flex;
-      justify-content: space-around;
-      padding-bottom: 3%;
-      text-decoration: none; }
-    * header a:hover {
-      color: #334024;
-      transition: all 2s;
-      font-size: 2.5em; }
   * section {
     color: aliceblue; }
     * section img {
       flex: 5%;
       padding-left: 0.5%; }
-    * section .fotoInicio {
-      width: 99%; }
+    * section .carrousel-menu {
+      display: none; }
+    * section .carrousel {
+      display: flex;
+      gap: 10px;
+      justify-content: center; }
+      * section .carrousel ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        max-width: 500px;
+        scroll-behavior: smooth; }
+    * section .carrousel-fotos {
+      display: flex;
+      gap: 10px;
+      overflow: auto; }
+      * section .carrousel-fotos img {
+        width: 400px;
+        height: 300px;
+        object-fit: contain; }
+    @media screen and (min-width: 500px) {
+      * section .carrousel-fotos {
+        overflow: hidden; }
+        * section .carrousel-fotos img {
+          width: 500px;
+          height: 400px; }
+      * section .carrousel-menu {
+        display: block;
+        margin-top: 20px !important;
+        gap: 20px; }
+        * section .carrousel-menu img {
+          width: 70px;
+          height: 60px;
+          border: 5px solid #6d8661;
+          gap: 30px; }
+          * section .carrousel-menu img:hover {
+            transition: 2s;
+            transform: scale(1.2); } }
     * section .titulos:hover {
       color: #6d8661; }
   * .menu-cabanas {
     margin: 0%;
     display: flex;
     justify-content: center;
-    justify-content: space-around; }
+    justify-content: space-around;
+    text-decoration: none; }
     * .menu-cabanas a {
       color: aliceblue;
       font-family: "allura", cursive;
@@ -68,11 +116,22 @@
       text-decoration: none; }
       * .menu-cabanas a:hover {
         color: #6d8661;
-        transition: all 2s;
-        font-size: 2.5em; }
+        transform: scale(1, 3);
+        transition: all 2s; }
     * .menu-cabanas .image-muestra {
       width: 100%;
       display: flex; }
+  * .button {
+    color: aliceblue;
+    font-family: "allura", cursive;
+    font-size: 1.7em;
+    text-decoration: none;
+    display: flex;
+    justify-content: end;
+    padding-right: 10%;
+    padding-top: 5%; }
+    * .button:hover {
+      color: #6d8661; }
   * .grid-container {
     display: grid;
     grid-template-rows: 100%;
@@ -90,7 +149,7 @@
   * .referencias {
     padding-top: 3%;
     line-height: 50px;
-    font-family: 'Arima Madurai', cursive;
+    font-family: "Arima Madurai", cursive;
     padding-left: 5%; }
   * .mapa {
     position: relative;
@@ -106,15 +165,11 @@
   * .texto-uno {
     padding-left: 15%;
     padding-top: 10%; }
-  * footer {
-    padding: 50px;
-    margin: 0%; }
-    * footer div ul {
-      list-style-type: none;
-      display: flex;
-      justify-content: space-around;
-      padding-top: 3%;
-      padding-bottom: 3%; }
-    * footer img {
-      width: 45%;
-      padding-left: 35%; }
+  * .btn-primary {
+    color: black;
+    background-color: #6d8661;
+    border: black; }
+    * .btn-primary:hover {
+      background-color: #6d8661;
+      color: white;
+      border: black; }

@@ -1,5 +1,8 @@
-@import "variables";
-@import "extends";
+@import "base/variables";
+@import "base/extends";
+@import "components/footer";
+@import "components/header";
+@import "components/main";
 
 
 
@@ -11,63 +14,85 @@
         background-color: #9e9e74a8;
     }
 
-    header {
-        background-color: $bg-header;
-
-        img {
-            max-width: 15%;
-
-            &:hover {
-                transition: all 2s;
-                max-width: 20%;
-            }
-        }
-
-        nav {
-            ul {
-                list-style-type: none;
-                display: flex;
-                justify-content: space-around;
-                padding-bottom: 3%;
-                text-decoration: none;
-            }
-        }
-
-        a {
-           @extend %estilos-menu;
-
-            &:hover {
-                color: #334024;
-                transition: all 2s;
-                font-size: 2.5em;
-            }
-        }
-
-    }
-
-
-
-
-
     section {
         img {
             flex: 5%;
             padding-left: 0.5%;
         }
 
-        .fotoInicio {
-            width: 99%;
+        .carrousel-menu {
+            display: none;
         }
+
+        .carrousel {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+
+            ul {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                max-width: 500px;
+                scroll-behavior: smooth;
+            }
+        }
+
+        .carrousel-fotos {
+            img {
+                width: 400px;
+                height: 300px;
+                object-fit: contain;
+
+            }
+
+            display: flex;
+            gap: 10px;
+            overflow: auto;
+        }
+
+        @media screen and (min-width: 500px) {
+            .carrousel-fotos {
+                overflow: hidden;
+
+                img {
+                    width: 500px;
+                    height: 400px;
+                }
+            }
+
+            .carrousel-menu {
+                display: block;
+                margin-top: 20px !important;
+                gap: 20px;
+
+                img {
+                    width: 70px;
+                    height: 60px;
+                    border: 5px solid #6d8661;
+                    gap: 30px;
+
+                    &:hover {
+                        transition: 2s;
+                        transform: scale(1.2);
+                    }
+                }
+            }
+        }
+
+
+
+
 
         color: $font-color;
 
         .texto {
-          @extend %estilos-textos;
+            @extend %estilos-textos;
 
         }
 
         .titulos {
-           @extend %estilos-titulos;
+            @extend %estilos-titulos;
 
             &:hover {
                 color: $bg-hover;
@@ -80,27 +105,50 @@
         display: flex;
         justify-content: center;
         justify-content: space-around;
+        text-decoration: none;
+
 
         a {
-            color:$font-color;
-            font-family: "allura", cursive;
+            color: $font-color;
+            font-family: $font-style-title;
             font-size: 1.7em;
             text-decoration: none;
 
 
             &:hover {
                 color: $bg-hover;
-                transition: all 2s;                
-                font-size: 2.5em;
+                transform: scale(1, 3);
+                transition: all 2s;
             }
+
         }
+
+
         .image-muestra {
             width: 100%;
             display: flex;
+            
         }
+
     }
 
-   
+    .button {
+        color: $font-color;
+        font-family: $font-style-title;
+        font-size: 1.7em;
+        text-decoration: none;
+        display: flex;
+        justify-content: end;
+        padding-right: 10%;
+        padding-top: 5%;
+
+        &:hover {
+            color: $bg-hover;
+        }
+
+    }
+
+
 
     .grid-container {
         display: grid;
@@ -112,14 +160,15 @@
         .grid-item {
             width: 100%;
             height: 100%;
-    
+
             &:hover {
-               @extend %hover-fotos;
+                @extend %hover-fotos;
+
             }
         }
     }
 
-  
+
 
     .grid-ubicacion {
         display: grid;
@@ -131,11 +180,11 @@
     .referencias {
         padding-top: 3%;
         line-height: 50px;
-        font-family: 'Arima Madurai', cursive;
+        font-family: $font-style-text;
         padding-left: 5%;
     }
 
-   
+
 
     .mapa {
         position: relative;
@@ -160,24 +209,16 @@
         padding-left: 15%;
         padding-top: 10%;
     }
+    .btn-primary {
+        color:black;
+        background-color: #6d8661;
+        border: black;
+       
+        &:hover {
+            background-color: #6d8661;
+            color: white;
+            border: black;
 
-    footer {
-        padding: 50px;
-        margin: 0%;
-
-        div {
-            ul {
-                list-style-type: none;
-                display: flex;
-                justify-content: space-around;
-                padding-top: 3%;
-                padding-bottom: 3%;
-            }
-        }
-
-        img {
-            width: 45%;
-            padding-left: 35%;
         }
 
     }
